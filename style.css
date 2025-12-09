@@ -1,0 +1,442 @@
+/* ===== CSS Boilerplate ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+*::selection {
+  color: #fff;
+  background-color: #000;
+}
+html body {
+  height: 100vh;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+#nav {
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  padding: 12px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#nav #nav-part1 {
+  height: 70px;
+  overflow: hidden;
+}
+
+#nav-part1 svg {
+  display: block;
+}
+
+#nav #twogoodlogo {
+  height: 49px;
+}
+
+#nav #nav-part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+#nav-part2 .links,
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 40px;
+  font-size: 14px;
+}
+#nav-part2 .links a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#nav-part2 .icons {
+  background-color: #f7f7f7;
+  border-radius: 25px;
+  color: #000;
+}
+#nav-part2 .icons i {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px;
+}
+
+#nav-part2 .links a:hover {
+  color: #333;
+  text-decoration: #000 underline;
+}
+#cursor {
+  height: 120px;
+  width: 120px;
+  background-color: rgb(253, 224, 179);
+  position: fixed;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+#page1 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  padding-top: 32vh;
+}
+#page1 h1 {
+  font-size: 16.3vw;
+  font-family: futura;
+  text-transform: uppercase;
+  line-height: 14vw;
+  letter-spacing: -10px;
+  text-align: center;
+}
+
+#image-container {
+  height: 100vh;
+  width: 100%;
+  margin-top: 2vw;
+  position: relative;
+}
+
+#image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  padding: 0 1.5vw;
+}
+#text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #171616;
+  padding: 15px;
+  gap: 10px;
+}
+#text-container h2 {
+  color: #000;
+  font-size: 29px;
+  font-weight: 900;
+}
+
+#text-container h4 {
+  color: #292828;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 5px 25px;
+}
+#text-container h6 {
+  color: #171616;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 5px 15px;
+  text-decoration: underline;
+}
+
+#page2 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vw 1vw;
+}
+#page2 .elem {
+  height: 100%;
+  width: 31.5%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page2 .elem img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  scale: 1;
+}
+
+#page2 .elem .dets {
+  height: 47px;
+  width: 77%;
+  border-radius: 50px;
+  background-color: #dcc0b4;
+  position: absolute;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dets .contents {
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.dets .contents .extra {
+  color: #000;
+  font-weight: bold;
+  font-size: 15px;
+}
+.elem .dets .Ll {
+  background-color: blue;
+}
+
+#page3 {
+  min-height: 120vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.child {
+  height: 65vh;
+  width: 40vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.child img {
+  height: 100%;
+}
+
+#page4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+#page4 #contact-us {
+  color: #171616;
+  padding-left: 12px;
+}
+#page4 #contact-us h2 {
+  color: #333;
+  font-size: 19px;
+  font-weight: 100;
+  padding-bottom: 7px;
+}
+#page4 #extra-info p {
+  color: #171616;
+  padding-right: 2px;
+}
+#page4 #extra-info h2 {
+  color: #333;
+  font-size: 19px;
+  font-weight: 100;
+  padding-bottom: 7px;
+}
+#page4 img {
+  height: 220px;
+}
+
+#copy-right {
+  color: rgb(49, 49, 50);
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+  #nav {
+    padding: 6px;
+  }
+
+  #nav-part1 {
+    height: 77px;
+    overflow: hidden;
+  }
+
+  #nav-part1 svg {
+    display: block;
+    height: 80px;
+    width: 55px;
+  }
+
+  #nav #twogoodlogo {
+    height: 30px;
+  }
+  #nav #nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  #nav-part2 .links,
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 7px;
+    font-size: 8px;
+  }
+  #nav-part2 .links a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: none;
+  }
+
+  #nav-part2 .icons {
+    background-color: #f7f7f7;
+    border-radius: 9px;
+    color: #000;
+  }
+  #nav-part2 .icons i {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 4px;
+    padding: 7px;
+  }
+
+  #nav-part2 .links a:hover {
+    color: #333;
+    text-decoration: #000 underline;
+  }
+  #page1 {
+    min-height: 60vh;
+    padding-top: 20vh;
+  }
+  #page1 h1 {
+    font-size: 13vw;
+    line-height: 11.5vw;
+    letter-spacing: -2px;
+  }
+
+  #image-container {
+    height: 40vh;
+    width: 100%;
+    margin-top: 2vw;
+    position: relative;
+  }
+
+  #image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #text-container {
+    padding: 11px;
+    gap: 5px;
+  }
+  #text-container h2 {
+    font-size: 16px;
+  }
+
+  #text-container h4 {
+    font-size: 12px;
+    padding: 3px 11px;
+  }
+
+  #text-container h6 {
+    font-size: 10px;
+    padding: 5px 10px;
+    text-decoration: underline;
+  }
+
+  #page2 {
+    display: flex;
+    flex-direction: column;
+    padding: 5vw 4vw;
+    gap: 1vh;
+  }
+  #page2 .elem {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 1.3vw;
+  }
+
+  #page2 .elem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #page2 .elem .dets {
+    height: 53px;
+    width: 87%;
+    border-radius: 50px;
+    background-color: #dcc0b4;
+    position: absolute;
+    z-index: 9;
+  }
+
+  .child {
+    height: 47vh;
+    width: 78vw;
+    position: relative;
+    padding: 12vw;
+  }
+  .child img {
+    height: 100%;
+  }
+
+  #page4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+  #page4 #contact-us {
+    color: #171616;
+    padding-left: 7px;
+  }
+  #page4 #contact-us h2 {
+    color: #333;
+    font-size: 7px;
+    font-weight: 100;
+    padding-bottom: 5px;
+  }
+  #page4 #extra-info p {
+    color: #171616;
+    padding-right: 2px;
+  }
+  #page4 #extra-info h2 {
+    color: #333;
+    font-size: 5px;
+    font-weight: 100;
+    padding-bottom: 7px;
+  }
+  #page4 img {
+    height: 100px;
+  }
+
+  #copy-right {
+    color: rgb(49, 49, 50);
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 5px;
+    padding-bottom: 15px;
+  }
+}
